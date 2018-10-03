@@ -1,0 +1,116 @@
+<div class="grid-x"  style="padding: 100px 0; background-color: #D7DD3B;">
+	<div class="cell small-12 text-center medium-4 medium-offset-4">
+		<img src="http://freedomfromdebtcollectors.com.au/wp-content/uploads/2014/04/headerLogo.png" alt="Freedom fromdebt collectors">
+	</div>
+</div>
+
+<div class="grid-x"  style="padding: 40px 0; background-color: #404041;">
+	<div class="cell small-12 medium-8 medium-offset-2 text-center">
+		<h1 style="color: #fff; font-weight: 300; letter-spacing: -1px">Was your debt insured, underwritten then sold as a repairable write off?</h1>
+	</div>
+</div>
+
+<div class="grid-container" style="margin-top: 40px;">
+	<div class="grid-x grid-margin-x">
+		<div class="cell small-12 medium-6">
+			
+			<div class="flex-video" >
+			<video id="my-video" class="video-js" controls preload="auto" 
+			  poster="http://freedomfromdebtcollectors.com.au/wp-content/uploads/2018/02/screen.png" data-setup="{}">
+			    <source src="https://res.cloudinary.com/thypowerhouse/video/upload/v1538551565/freedomfromdebtcollectors/Debt_Collector_Video_add.mp4" type='video/mp4'>
+			    <source src="https://res.cloudinary.com/thypowerhouse/video/upload/v1538551565/freedomfromdebtcollectors/Debt_Collector_Video_add.webm" type='video/webm'>
+			    <p class="vjs-no-js">
+			      To view this video please enable JavaScript, and consider upgrading to a web browser that
+			      <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+			    </p>
+			  </video>
+			</div>
+
+			<div style="margin-top: -50px; background-color: #D7DD3B; color: #fff; text-align: center; font-weight: 300; font-size: 30px;">
+				Have your Debt Investigated NOT Negotiated. Get the Facts NOT the BS!
+			</div>
+
+			<img src="http://freedomfromdebtcollectors.com.au/wp-content/uploads/2014/04/Investigator.jpeg" alt="William Edgar Business Card">
+
+		</div>
+		<div class="cell small-12 medium-6">
+			<h2 style="font-size: 40px; font-weight: 300; line-height: 38px;">The best kept secret and how you can keep the debt collectors at bay.. <i style="color: #b2b71f">legally!</i></h2>
+			<h2 style="font-size: 20px; font-weight: 300; color: #3a3a38">Download these do it yourself documents for just <span style="color: #b2b71f">$49.00</span> and protect yourself from debt collectors.</h2>
+
+			<form action="<%= charge_make_charge_path %>" method="POST">
+			  <script
+			    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+			    data-key="<%= ENV['STRIPE_PUBLIC'] %>"
+			    data-amount="4900"
+			    data-zip-code="true"
+			    data-name="Billara"
+			    data-description="Protection Docs"
+			    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+			    data-locale="auto"
+			    data-currency="aud">
+			  </script>
+
+			  <script>
+			          // Hide default stripe button, be careful there if you
+			          // have more than 1 button of that class
+			          document.getElementsByClassName("stripe-button-el")[0].style.display = 'none';
+			      </script>
+			      <button type="submit" class="button primary success large expanded" style="border-radius: 5px; margin: 20px 0; background-color: #b2b71f; color: #fff;">DOWNLOAD NOW JUST $49</button>
+
+			</form>
+
+			<h3 style="font-weight: 300; font-size: 28px; margin-top: 20px;">What you get inside</h3>
+			
+				
+
+			<ol>
+				<li><h3 style="font-weight: 600; font-size: 20px;">Disclosure Statement PDF</h3>
+					<div style="color: #b2b71f" data-open="exampleModal1">
+					<p>Is a legal document that is used to gather further and better particulars in regards to an alleged debt procured, assigned or purchased by debt collectors.</p>
+
+										<p>The Disclosure Statement can be sent to debt collectors in response to their claims of an alleged debt despite them providing a Notice of Assignment.</p>
+									</div>
+
+				<li><h3 style="font-weight: 600; font-size: 20px;">No Contract=No Consent=No Law PDF </h3>
+					<div style="color: #b2b71f" data-open="exampleModal2">
+
+						<p>Is a legal document to notify debt collectors that you intend to file a notice to produce certified copies of an alleged debt. The No Contract=No Consent=No Law PDF is to be used in the event debt collectors continue to refuse or acknowledge your legal right to further and better particulars. All parties have a legal right to obtain further and better particulars in regards to an alleged debt and in some cases a subpoena may be needed. </p>
+
+						<p>If in the event you have received a notice of assignment without further and better particulars this PDF can be used to seek the actual Deed of Novation (Proof of Debt).</p>
+
+					</div>
+
+				<li><h3 style="font-weight: 600; font-size: 20px;">Harassment by Interloper PDF</h3>
+					<div style="color: #b2b71f" data-open="exampleModal3">
+						<p>Is a legal cease and desist notice sent to debt collectors/interlopers to stop all contact by telephone. Upon sending this document you must provide an address, postal or email for debt collectors to continue correspond. (Written only).</p>
+
+						<p>The Harassment by Interloper PDF may be used at anytime you feel threatened, bullied or intimidated, if in the event debt collectors ignore this notice and continue to harass then you have the right to report to police and demand your rights be protected. </p>
+					</div>
+
+
+					<div class="reveal" id="exampleModal1" data-reveal>
+					  <p class="lead">Disclosure Statement PDF</p>
+					  
+
+					  					
+					  <button class="close-button" data-close aria-label="Close modal" type="button">
+					    <span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+
+					
+				</li>
+			</ol>
+
+			<small><strong>Disclosure:</strong>
+				<p>By purchasing and or using the information contained on this website such as but not limited to the PFD’s you agree to not hold liable or accountable Freedom from Debt Collectors, The Debt Detective and William Edgar for any loss legal or otherwise and agree to not sue or seek compensation.</p>
+			</small>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
