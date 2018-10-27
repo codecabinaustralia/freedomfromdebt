@@ -7,9 +7,9 @@ class ChargeController < ApplicationController
   	token = params[:stripeToken]
 
   	charge = Stripe::Charge.create({
-  	    amount: 999,
-  	    currency: 'usd',
-  	    description: 'Example charge',
+  	    amount: 995,
+  	    currency: 'aud',
+  	    description: 'PDF DOWNLOAD',
   	    source: token,
   	})
 
